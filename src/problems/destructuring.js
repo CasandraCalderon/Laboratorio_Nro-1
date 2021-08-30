@@ -62,7 +62,7 @@ const person = {
     person.roles.push({name: "User", method: "get"});
     return { ...person, id };
    };*/
-   // SEGUNDO DESAFIO
+   //SEGUNDO DESAFIO
     const addIdUser = (person, id) => {
     person.roles = [...person.roles, {name: "User", method: "get"}];
     return { ...person, id };
