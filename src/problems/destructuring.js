@@ -19,7 +19,7 @@ const person = {
     },
    };
    
-   const showPersonalInformation = (person) => {
+   /*const showPersonalInformation = (person) => {
     const printPersonal = (nombre, apellido, edad) =>{
         return ["Nombres " + nombre, "Apellidos " + apellido, "Edad " + edad].join("\n");
     }
@@ -53,6 +53,22 @@ const person = {
     console.log(getPosition(person));
     console.log(getFirstRol(person));
     console.log(getAddress(person));
+   };*/
+   /*const addIdUser = (person, id) => {
+    return { ...person, id };
+   };*/
+   // PRIMER DESAFIO
+   /*const addIdUser = (person, id) => {
+    person.roles.push({name: "User", method: "get"});
+    return { ...person, id };
+   };*/
+   // SEGUNDO DESAFIO
+    const addIdUser = (person, id) => {
+    person.roles = [...person.roles, {name: "User", method: "get"}];
+    return { ...person, id };
    };
+   let main = () =>{
+    console.log(addIdUser(person, 123456));
+   }
    export default main;
    
