@@ -1,2 +1,2 @@
-import main from "./problems/destructuring";
+import main from "./problems/DescendingOrder";
 main();
