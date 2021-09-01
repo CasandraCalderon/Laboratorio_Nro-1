@@ -1,2 +1,2 @@
-import main from "./problems/perfectSquare";
+import main from "./problems/store";
 main();
